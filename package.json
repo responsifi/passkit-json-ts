@@ -1,0 +1,25 @@
+{
+  "name": "passkit-json-ts",
+  "version": "1.0.0",
+  "description": "TypeScript types file for PassKit pass.json structure",
+  "main": "index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/responsifi/passkit-json-ts.git"
+  },
+  "keywords": [
+    "Apple Wallet",
+    "PassKit",
+    "pass.json",
+    "pkpass"
+  ],
+  "author": {
+    "name": "David Luu",
+    "email": "david@responsifi.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/responsifi/passkit-json-ts/issues"
+  },
+  "homepage": "https://github.com/responsifi/passkit-json-ts#readme"
+}
