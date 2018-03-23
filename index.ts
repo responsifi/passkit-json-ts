@@ -33,7 +33,7 @@ export interface PKPassJson {
     storeCard?: PassStructureDictionary
 
     // Visual Appearance Keys
-    // TODO: "color, as a string"
+    // TODO: 'color, as a string'
     barcode?: BarcodeDictionary
     barcodes?: Array<BarcodeDictionary>
     backgroundColor?: string
@@ -105,7 +105,8 @@ interface StandardFieldDictionary {
 
 /**
  * Information about how a date should be displayed in a field.
- * If any of these keys is present, the value of the field is treated as a date. Either specify both a date style and a time style, or neither.
+ * If any of these keys is present, the value of the field is treated as a date.
+ * Either specify both a date style and a time style, or neither.
  */
 interface DateStyle {
     dateStyle: PKDateStyle
@@ -116,21 +117,47 @@ interface DateStyle {
 
 /**
  * Information about how a number should be displayed in a field.
- * These keys are optional if the field’s value is a number; otherwise, they are not allowed. Only one of these keys is allowed per field.
+ * These keys are optional if the field’s value is a number; otherwise, they are not allowed.
+ * Only one of these keys is allowed per field.
  */
 interface NumberStyle {
     currencyCode: string
     numberStyle: PKNumberStyle
 }
 
-type PKBarcodeFormat = "PKBarcodeFormatQR" | "PKBarcodeFormatPDF417" | "PKBarcodeFormatAztec"
+type PKBarcodeFormat =
+    'PKBarcodeFormatQR' |
+    'PKBarcodeFormatPDF417' |
+    'PKBarcodeFormatAztec'
 
-type PKDataDetectorType = "PKDataDetectorTypePhoneNumber" | "PKDataDetectorTypeLink" | "PKDataDetectorTypeAddress" | "PKDataDetectorTypeCalendarEvent"
+type PKDataDetectorType =
+    'PKDataDetectorTypePhoneNumber' |
+    'PKDataDetectorTypeLink' |
+    'PKDataDetectorTypeAddress' |
+    'PKDataDetectorTypeCalendarEvent'
 
-type PKDateStyle = "PKDateStyleNone" | "PKDateStyleShort" | "PKDateStyleMedium" | "PKDateStyleLong" | "PKDateStyleFull"
+type PKDateStyle =
+    'PKDateStyleNone' |
+    'PKDateStyleShort' |
+    'PKDateStyleMedium' |
+    'PKDateStyleLong' |
+    'PKDateStyleFull'
 
-type PKNumberStyle = "PKNumberStyleDecimal" | "PKNumberStylePercent" | "PKNumberStyleScientific" | "PKNumberStyleSpellOut"
+type PKNumberStyle =
+    'PKNumberStyleDecimal' |
+    'PKNumberStylePercent' |
+    'PKNumberStyleScientific' |
+    'PKNumberStyleSpellOut'
 
-type PKTextAlignment = "PKTextAlignmentLeft" | "PKTextAlignmentCenter" | "PKTextAlignmentRight" | "PKTextAlignmentNatural"
+type PKTextAlignment =
+    'PKTextAlignmentLeft' |
+    'PKTextAlignmentCenter' |
+    'PKTextAlignmentRight' |
+    'PKTextAlignmentNatural'
 
-type PKTransitType = "PKTransitTypeAir" | "PKTransitTypeBoat" | "PKTransitTypeBus" | "PKTransitTypeGeneric" | "PKTransitTypeTrain" 
+type PKTransitType =
+    'PKTransitTypeAir' |
+    'PKTransitTypeBoat' |
+    'PKTransitTypeBus' |
+    'PKTransitTypeGeneric' |
+    'PKTransitTypeTrain' 
